@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/api/v1/app.py",
+      "src": "api/v1/app.py",
       "use": "@vercel/python",
       "config": {
         "maxDuration": 10,
@@ -12,24 +12,24 @@
   ],
   "routes": [
     {
-      "src": "/api/v1/(.*)",
-      "dest": "backend/api/v1/app.py"
+      "src": "api/v1/(.*)",
+      "dest": "api/v1/app.py"
     },
     {
       "src": "/dashboard",
-      "dest": "backend/api/v1/app.py"
+      "dest": "api/v1/app.py"
     },
     {
       "src": "/health",
-      "dest": "backend/api/v1/app.py"
+      "dest": "api/v1/app.py"
     },
     {
       "src": "/(.*)",
-      "dest": "backend/api/v1/app.py"
+      "dest": "api/v1/app.py"
     }
   ],
   "env": {
     "FLASK_ENV": "production",
-    "PYTHONPATH": "./backend"
+    "PYTHONPATH": "./"
   }
 }
