@@ -1,0 +1,17 @@
+SQLAlchemy
+shopifyAPI
+python-dotenv
+requests
+Celery
+redis
+flask
+gunicorn
+pandas
+flask-redoc
+alembic
+flask-session
+flask-session2
+flask-cors
+bcrypt
+PyYAML
+psycopg2-binary
